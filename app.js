@@ -13,7 +13,7 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
 
-// Schema for items
+// plain object-type schema for items
 const itemSchema = {
   text: String,
 };
@@ -25,7 +25,7 @@ const item2 = new Item({ text: "+ button to add an item" });
 const item3 = new Item({ text: "<-- check this to delete item" });
 const defaultItems = [item1, item2, item3];
 
-// Schema for lists
+// plain object-type schema for lists
 const listSchema = {
   name: String,
   items: [itemSchema],

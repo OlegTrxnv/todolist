@@ -1,3 +1,4 @@
+// not in use, saved for Date() using reference!
 exports.getDate = function () {
   const today = new Date();
 
